@@ -1,0 +1,132 @@
+html{
+	display:table;
+	width:100%;
+	height:100vh;
+	background:#282828;
+	font-family:Times;
+	color:#a89984;
+	font-size:20px;
+	scrollbar-color:#a89984 transparent;
+}
+body{
+	padding:50px 15px;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+#wrapper{
+	background:#3c3836;
+	max-width:900px;
+	min-width:600px;
+	margin:0 auto;
+	position:relative;
+	padding:1px;
+	border:1px solid #1d2021;
+}
+
+h1,h2,h3{
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration:underline dotted #504945;
+	color:#bdae93;
+}
+a:hover{text-decoration:underline dotted #a89984;}
+
+#header{
+	height:150px;
+	background:#1d2021;
+	margin-bottom:5px;
+	border-bottom:1px solid #504945;
+	position:relative;
+	overflow:hidden;
+}
+#header:after{
+	content:'';
+	position:absolute;
+	top:0;
+	right:0;
+	height:150px;
+	width:100%;
+	background:linear-gradient(to right, rgba(40,40,40,.9),transparent);
+}
+#header img{
+	position:absolute;
+	top:0;
+	right:0;
+}
+#header h1{
+	line-height:150px;
+	padding:0 25px;
+	z-index:1;
+	position:relative;
+	text-shadow:0 2px 2px #1d2021;
+}
+
+#sidenav{
+	width:200px;
+	padding:7px;
+	outline:1px solid #282828;
+	background:rgba(40,40,40,0.5);
+	border-bottom:1px solid #504945;
+	position:absolute;
+	left:4px;
+	top:157px;
+	bottom:4px;
+	overflow:hidden;
+	overflow-y:auto;
+	font-size:16px;
+}
+#sidenav a{
+	display:block;
+	margin-bottom:4px;
+}
+details{padding-top:7px;}
+
+#content-wrapper{
+	padding:0 3px 0 224px;
+}
+
+#location{
+	line-height:30px;
+	padding:0 15px;
+	background:linear-gradient(#3c3836,#282828);
+	font-size:18px;
+	overflow:hidden;
+	border-bottom:1px solid #504945;
+	outline:1px solid #1d2021;
+}
+#location a{
+	float:left;
+}
+#location a:after{
+	content:'/';
+	margin:0 7px;
+	float:right;
+	text-decoration:none;
+	color:#504945;
+}
+
+#content{
+	padding:17px 10px;
+}
+p{
+	padding:0;
+	white-space:pre-line;
+	line-height:1.2em;
+	margin:0;
+}
+#content h2{
+	display:block;
+	border-bottom:1px solid #504945;
+	font-size:32px;
+	margin-bottom:20px;
+}
+
+#footer{
+	border-bottom:1px solid #1d2021;
+	padding:7px 10px;
+	text-align:right;
+	font-size:14px;
+}
